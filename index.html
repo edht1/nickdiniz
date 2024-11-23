@@ -3,15 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NickDiniz.com</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Nick Diniz Appointment Scheduler</title>
+    <link rel="stylesheet" href="styles.css">
+	<link rel="icon" href="nick.ico" type="image/x-icon">
+
 </head>
 <body>
-    <div id="title">NickDiniz.com</div>
-    <div id="subtitle">Site under construction...</div>
-    <div class="image-container">
-        <img src="nick.png" alt="Logo" class="responsive-image">
+    <div id="title-container">
+        <h1 id="title">Nick Diniz's Appointment Scheduler</h1>
     </div>
+
+    <div id="calendar-container">
+        <div id="month-controls">
+            <button id="prev-month">&#10094;</button>
+            <span id="month-year"></span>
+            <button id="next-month">&#10095;</button>
+        </div>
+        <div id="calendar-grid"></div>
+    </div>
+	
+	<img id="nick-image" src="nick.png" alt="Nick Image">
+
+    <div id="day-popup" class="hidden">
+        <div id="time-slots"></div>
+        <button id="close-day-popup">X</button>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
