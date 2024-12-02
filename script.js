@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
 "2024-12-25": { "8:00 AM": "Clara A", "9:00 AM": "Sadie Q", "10:00 AM": "Adeana S", "11:00 AM": "Emily L", "12:00 PM": "Madeline G", "1:00 PM": "Riddhi P", "2:00 PM": "Ava T" },
 "2024-12-26": { "8:00 AM": "Sophie K", "9:00 AM": "Olivia P", "10:00 AM": "Adeana S", "11:00 AM": "Adeana S", "12:00 PM": "Adeana S", "1:00 PM": "Riddhi P", "2:00 PM": "Emily K" },
 "2024-12-27": { "8:00 AM": "Madeline F", "9:00 AM": "Olivia G", "10:00 AM": "Lily N", "11:00 AM": "Adeana S", "12:00 PM": "Victoria T", "1:00 PM": "Riddhi P", "2:00 PM": "Zoe W" },
-"2024-12-30": { "8:00 AM": "Adeana S","10:00 AM": "Emily P", "11:00 AM": "Zoe V", "12:00 PM": "Ava B", "1:00 PM": "Riddhi P", "2:00 PM": "Madeline S" },
+"2024-12-30": { "8:00 AM": "Adeana S", "9:00 AM": "Sophie D", "10:00 AM": "Emily P", "11:00 AM": "Zoe V", "12:00 PM": "Ava B", "1:00 PM": "Riddhi P", "2:00 PM": "Madeline S" },
 "2024-12-31": { "8:00 AM": "Harper X", "9:00 AM": "Adeana S", "10:00 AM": "Adeana S", "11:00 AM": "Lily E", "12:00 PM": "Zoe H", "1:00 PM": "Riddhi P", "2:00 PM": "Olivia J" },
 
 "2025-01-01": { "8:00 AM": "Aubrey J", "9:00 AM": "Lily A", "10:00 AM": "Victoria E", "11:00 AM": "Adeana S", "12:00 PM": "Clara Y", "1:00 PM": "Riddhi P", "2:00 PM": "Adeana S" },
@@ -190,7 +190,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     nextMonth.addEventListener("click", () => {
         const maxDate = new Date();
-        maxDate.setMonth(maxDate.getMonth() + 2);
+        maxDate.setMonth(maxDate.getMonth() + 3);
         if (currentMonth < maxDate.getMonth() || currentYear < maxDate.getFullYear()) {
             currentMonth++;
             if (currentMonth > 11) {
