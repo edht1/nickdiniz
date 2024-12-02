@@ -190,7 +190,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     nextMonth.addEventListener("click", () => {
         const maxDate = new Date();
-        maxDate.setMonth(maxDate.getMonth() + 3);
+        maxDate.setMonth(maxDate.getMonth() + 2);
         if (currentMonth < maxDate.getMonth() || currentYear < maxDate.getFullYear()) {
             currentMonth++;
             if (currentMonth > 11) {
